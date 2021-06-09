@@ -5,30 +5,28 @@ body {
 }
 /* /reset */
 
-.nav {
+.menu-list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
-ul.nav {
   list-style-type: none;
   padding: 0;
 }
-.nav-item {
+.menu-item {
   margin: 0 auto;
 }
-.nav-link {
+.menu-link {
   display: block;
   padding: 6px 15px;
   font-size: 20px;
   color: #000;
   text-decoration: none;
 }
-.nav-link,
-.nav-target {
+.menu-link,
+.menu-bar {
   transition: all 0.35s ease-in-out;
 }
-.nav-target {
+.menu-bar {
   position: absolute;
   border-bottom: 4px solid transparent;
 }
