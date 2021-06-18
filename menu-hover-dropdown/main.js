@@ -4,7 +4,7 @@ var header = document.querySelector(".page-header"),
   headerHeight = header.offsetHeight,
   subMenuHeight = 0;
 
-// 그라디언트 헤더 배경
+// 헤더 높이에 따라 헤더 그라디언트 배경 주기
 header.style.backgroundImage =
   "linear-gradient(" +
   "white " +
@@ -13,6 +13,7 @@ header.style.backgroundImage =
   headerHeight +
   "px, rgba(255, 255, 255, 0.5))";
 
+// 노출되는 메뉴 높이 구하기
 for (var i = 0; i < mainMenuItems.length; i++) {
   mainMenuItems[i].addEventListener("mouseover", function () {
     if (this.getElementsByTagName("ul").length > 0) {
@@ -25,6 +26,7 @@ for (var i = 0; i < mainMenuItems.length; i++) {
   });
 }
 
+// 전체 메뉴 노출
 // 전체 메뉴 높이 구하기
 // for (var i = 0; i < subMenuItems.length; i++) {
 //   if (subMenuItems[i].offsetHeight > subMenuHeight) {
