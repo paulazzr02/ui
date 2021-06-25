@@ -1,4 +1,4 @@
-var btt = document.getElementById("back-to-top");
+var btt = document.getElementById("scrollToTop");
 var docEl = document.documentElement;
 var offset, scrollPos, docHeight;
 
