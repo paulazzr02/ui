@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+:root {
+  --primary-color: orange;
+}
+
+/* Base */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+html {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+body {
+  overflow-x: hidden;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: rgb(0, 0, 0);
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+}
+
+/* Helper */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  word-wrap: break-word;
+}
+.btn {
+  padding: 6px 12px;
+  border-color: #ddd;
+  background-color: transparent;
+  box-shadow: none;
+}
+.btn ~ .btn {
+  margin-left: 10px;
+}
+
+/* Accordion */
+.btn-outline-secondary {
+  float: right;
+  margin-top: -50px;
+  margin-bottom: 30px;
+}
+.panel {
+  margin-bottom: 30px;
+  color: rgba(0, 0, 0, 0.87);
+  background: #fff;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%),
+    0 1px 5px 0 rgb(0 0 0 / 12%);
+}
+.panel-heading,
+.panel-body {
+  padding: 10px 20px;
+}
+.panel-heading {
+  font-size: 120%;
+  font-weight: bold;
+  background-color: #2970bc;
+  color: #fff;
+}
